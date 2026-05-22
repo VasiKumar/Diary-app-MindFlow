@@ -1,12 +1,87 @@
+<div align="center">
 
-## Run Locally
+# 🌊 MindFlow – Code Repository
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+<img src="https://img.shields.io/badge/Android-App-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/Type-Diary%20App-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-In%20Development-orange?style=for-the-badge">
 
+</div>
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
+---
+
+## 🧠 About MindFlow
+
+MindFlow is a modern Android diary app designed to help users **capture thoughts instantly and securely**.
+
+It focuses on:
+- ⚡ Speed (write in seconds)
+- 🔒 Privacy-first design
+- 🧘 Minimal distraction UI
+- 📝 Smooth journaling experience
+
+> “Your thoughts deserve a clean space to flow.”
+
+---
+
+## 🚀 Run Locally
+
+### 📌 Prerequisites
+- Android Studio (latest recommended)
+- Android SDK installed
+- Emulator or physical device
+
+---
+
+### 🛠️ Setup Steps
+
+#### 1️⃣ Open Project
+```text
+Open Android Studio → Click "Open" → Select project folder
+2️⃣ Let Gradle Sync
+
+Android Studio will automatically:
+
+Download dependencies
+Fix compatibility issues
+Setup project structure
+3️⃣ Create Environment File 🔐
+
+Create a file in the root directory:
+
+.env
+
+Add your Gemini API key:
+
+GEMINI_API_KEY=your_api_key_here
+
+👉 Refer to .env.example for format reference.
+
+4️⃣ Fix Signing (Important)
+
+In app/build.gradle.kts, remove:
+
+signingConfig = signingConfigs.getByName("debugConfig")
+
+This is only needed for release builds.
+
+5️⃣ Run the App 🚀
+
+Now simply:
+
+Run ▶️ on Emulator or Physical Device
+⚠️ Notes
+🔑 Never commit .env or API keys
+🧪 Debug builds are for testing only
+📦 Release builds are required for production use
+🌊 MindFlow Philosophy
+<div align="center"> <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=22&duration=3000&color=00F7FF&center=true&vCenter=true&width=600&lines=Thoughts+come+fast;MindFlow+keeps+them+safe;Write+without+distraction"> </div>
+📌 Project Status
+
+🚧 Actively evolving
+✨ New features in development
+📱 Android-first experience
+
+<div align="center">
+⭐ If you like this project, consider starring the repo!
+</div> ```
